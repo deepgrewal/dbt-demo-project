@@ -2,10 +2,10 @@
 This repo is a guide to setup DBT using PostgreSQL in windows.
 
 ## Table of content
-[Install PostgreSQL](#install-postgresql)
-[Install Python](#install-python)
-[Python Setup for DBT](#python-setup-for-dbt)
-[Setup DBT](#setup-dbt)
+- [Install PostgreSQL](#install-postgresql)
+- [Install Python](#install-python)
+- [Setup Python](#setup-python)
+- [Setup DBT](#setup-dbt)
 
 ## Install PostgreSQL
 Download and install PostgreSQL
@@ -15,7 +15,7 @@ https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 Download and install python
 https://www.python.org/downloads/
 
-## Python Setup for DBT
+## Setup Python
 ### Create a python virtual environment
 python -m venv PyEnv
 
