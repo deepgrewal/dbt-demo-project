@@ -1,29 +1,39 @@
 # dbt-demo-project
-This repo is to demo the use of dbt using PostgreSQL
+This repo is a guide to setup DBT using PostgreSQL in windows.
 
-<img src="image.png" />
+## Table of content
+[Install PostgreSQL](#install-postgresql)
+[Install Python](#install-python)
+[Python Setup for DBT](#python-setup-for-dbt)
+[Setup DBT](#setup-dbt)
 
-Download and install PostgreSql. I use Windows Subsystem for Linux. So I installed postgres in Ubuntu
+## Install PostgreSQL
+Download and install PostgreSQL
 https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 
-Create a python virtual environment
+## Install Python
+Download and install python
+https://www.python.org/downloads/
+
+## Python Setup for DBT
+### Create a python virtual environment
 python -m venv PyEnv
 
-Activate the virtual environment and upgrade
+### Activate the virtual environment and upgrade
 .\PyEnv\Scripts\activate
 pip install --upgrade pip
 pip install --upgrade setuptools
 
-Install dbt
+## Setup DBT
 pip install dbt-postgres
 
-Initialize new dbt project. 
+### Initialize new dbt project. 
 dbt init
 
 The above command will ask for a project name (In my case it is demo) and a database (In my case it is postgresql).
 Once done, it will create a new project in your current repository
 
-Configure connection to your data warehouse.
+### Configure connection to your data warehouse.
 cd ~/.dbt
 
 Modify profiles.yaml file
